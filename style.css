@@ -1,0 +1,138 @@
+body{
+    background-image: linear-gradient(90deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container{
+    background-color: white;
+    width: 450px;
+    height: 35rem;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    min-height: 100vh;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+hr{
+    border-top: 1px hsl(240, 5%, 91%);
+}
+
+.faq{
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+.q{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(238, 29%, 16%);
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+}
+.active, .q:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color: black; 
+  }
+
+  .q:hover{
+    color: hsl(14, 88%, 65%);
+  }
+
+.a{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0 18px;
+    display: none;
+    color: hsl(240, 6%, 50%);
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.QA{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flip .arrow{
+    transform: scaleY(-1);
+}
+
+.mainimg{
+   text-align: center;
+}
+
+.ladym{
+    margin-top: -105px;
+}
+
+.shadowm{
+    margin-top: -90px;
+    margin-right: -30px;
+}
+
+.desktopimg{
+    display: none;
+}
+
+
+@media screen and (min-width:700px){
+
+
+    .mobileimg{
+        display: none;
+    }
+
+    .mainimg{
+        overflow: hidden;
+        margin-left: -95px;
+        padding-left: 100px;
+    }
+
+    .desktopimg{
+        display: flex;
+        margin-top: 3rem;
+        margin-left: -170px;
+        
+    }
+
+    .ladyd{
+        position: relative;
+        
+    }
+
+    .atboxd{
+        position: absolute;
+        bottom: 20%;
+        left: 6%;
+    }
+
+    .container{
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -1700% 100%;
+    }
+
+    .text{
+        margin-right: 0px;
+    }
+
+    .a{
+        max-width: 250px;
+    }
+}
+  
